@@ -1,0 +1,18 @@
+---
+title: "diamonds"
+author: "Frankie Tyndall"
+date: "2022-08-04"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(dplyr)
+```
+
+
+```{r}
+diamonds%>%
+  select(price, color, x)
+```
